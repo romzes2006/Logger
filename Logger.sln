@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{D8818A5F-5269-478D-96EB-0A1AE14B412B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8818A5F-5269-478D-96EB-0A1AE14B412B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8818A5F-5269-478D-96EB-0A1AE14B412B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8818A5F-5269-478D-96EB-0A1AE14B412B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8818A5F-5269-478D-96EB-0A1AE14B412B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
