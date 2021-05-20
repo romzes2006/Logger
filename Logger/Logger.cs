@@ -19,10 +19,8 @@ namespace Logger
 
         private async Task WriteToFileAsync(string message)
         {
-            using (var file = new StreamWriter(_path, true))
-            {
-                await file.WriteLineAsync(message);
-            }
+            await using var file = new StreamWriter(_path, true);
+            await file.WriteLineAsync(message);
         }
 
         public async Task InfoAsync(string message)
@@ -43,6 +41,11 @@ namespace Logger
         public async Task WarningAsync(string message)
         {
             await WriteToFileAsync($"{DateTime.Now:G} [WARNING] {message}");
+        }
+
+        public async Task CustomAsync(string type, string message)
+        {
+            await WriteToFileAsync($"{DateTime.Now:G} [{type}] {message}");
         }
     }
 }
